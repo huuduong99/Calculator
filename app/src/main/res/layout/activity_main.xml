@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/line5"
+        android:text="0"
+        android:gravity="right|center"
+        android:textColor=" #f8f8ff"
+        android:textSize="70dp" />
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-4dp">
+
+
+        <Button
+            android:id="@+id/btn0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".50"
+            android:padding="10dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/round_rectangle_button"
+            android:text="0"
+            android:textColor="#ffffff"
+            android:textSize="36sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".50"
+            android:layout_margin="8dp"
+            android:orientation="horizontal">
+
+            <com.example.calculator.CustomButton
+                android:id="@+id/btnDot"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:padding="10dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/round_button"
+                android:text="."
+                android:textColor="#ffffff"
+                android:textSize="36sp" />
+
+            <com.example.calculator.CustomButton
+                android:id="@+id/btnEqual"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:padding="10dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/round_button_2"
+                android:text="="
+                android:textColor="#ffffff"
+                android:textSize="36sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/line1">
+
+        <com.example.calculator.CustomButton
+            android:id="@+id/btn1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:padding="10dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/round_button"
+            android:text="1"
+            android:textColor="#ffffff"
+            android:textSize="36sp" />
+
+        <com.example.calculator.CustomButton
+            android:id="@+id/btn2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:padding="10dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/round_button"
+            android:text="2"
+            android:textColor="#ffffff"
+            android:textSize="36sp" />
+
+        <com.example.calculator.CustomButton
+            android:id="@+id/btn3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:padding="10dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/round_button"
+            android:text="3"
+            android:textColor="#ffffff"
+            android:textSize="36sp" />
+
+        <com.example.calculator.CustomButton
+            android:id="@+id/btnPlus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:padding="10dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/round_button_2"
+            android:text="+"
+            android:textColor="#ffffff"
+            android:textSize="36sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/line2">
+
+        <com.example.calculator.CustomButton
+            android:id="@+id/btn4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:padding="10dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/round_button"
+            android:text="4"
+            android:textColor="#ffffff"
+            android:textSize="36sp" />
+
+        <com.example.calculator.CustomButton
+            android:id="@+id/btn5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:padding="10dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/round_button"
+            android:text="5"
+            android:textColor="#ffffff"
+            android:textSize="36sp" />
+
+        <com.example.calculator.CustomButton
+            android:id="@+id/btn6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:padding="10dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/round_button"
+            android:text="6"
+            android:textColor="#ffffff"
+            android:textSize="36sp" />
+
+        <com.example.calculator.CustomButton
+            android:id="@+id/btnSub"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:padding="10dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/round_button_2"
+            android:text="-"
+            android:textColor="#ffffff"
+            android:textSize="36sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/line3">
+
+        <com.example.calculator.CustomButton
+            android:id="@+id/btn7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:padding="10dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/round_button"
+            android:text="7"
+            android:textColor="#ffffff"
+            android:textSize="36sp" />
+
+        <com.example.calculator.CustomButton
+            android:id="@+id/btn8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:padding="10dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/round_button"
+            android:text="8"
+            android:textColor="#ffffff"
+            android:textSize="36sp" />
+
+        <com.example.calculator.CustomButton
+            android:id="@+id/btn9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:padding="10dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/round_button"
+            android:text="9"
+            android:textColor="#ffffff"
+            android:textSize="36sp" />
+
+        <com.example.calculator.CustomButton
+            android:id="@+id/btnMul"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:padding="10dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/round_button_2"
+            android:text="x"
+            android:textColor="#ffffff"
+            android:textSize="36sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/line4">
+
+        <com.example.calculator.CustomButton
+            android:id="@+id/btnAC"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:padding="10dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/round_button_1"
+            android:text="AC"
+            android:textSize="36sp" />
+
+        <com.example.calculator.CustomButton
+            android:id="@+id/btnOppositeNumber"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:padding="10dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/round_button_1"
+            android:text="+/-"
+            android:textSize="36sp" />
+
+        <com.example.calculator.CustomButton
+            android:id="@+id/btnPercent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:padding="10dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/round_button_1"
+            android:text="%"
+            android:textSize="36sp" />
+
+        <com.example.calculator.CustomButton
+            android:id="@+id/btnDiv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:padding="10dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/round_button_2"
+            android:text="/"
+            android:textColor="#ffffff"
+            android:textSize="36sp" />
+
+    </LinearLayout>
+</RelativeLayout>
